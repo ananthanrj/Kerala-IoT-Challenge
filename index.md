@@ -2,23 +2,23 @@
 
 > **Foxlab Makerspace** in association with **GTech - Group of Technology Companies in Kerala** is launching our prestigious program  “*Kerala IoT Challenge 2021*”,  with a vision to mould 100 IoT experts in Kerala, hosting on the MuLearn platform. Kerala IoT Challenge is a program designed in 4 levels followed by a hackathon to identify and train quality industry leaders in the IoT domain, while any novice learner can start with layer 1 and others can enter laterally to the desired layer after an evaluation.
 
-### About Me
+## About Me
 > Hey y'all,  I'm Anantha Krishnan R J, a first year Electrical & Electronics Engineering Undergraduate from [**College of Engineering, Trivandrum**](https://www.cet.ac.in/). A beginner to the field of IoT. Hope it goes well.
 
-## Level 1:
+# Level 1:
 
 > Level 1 aims to set the foundation to the field of electonics. It comprises of 12 Experiments which are beginner friendly.
 
-## Experiments 
+# Experiments 
 ---
 
-### Experiment 1 - Hello World LED Blinking
+## Experiment 1 - Hello World LED Blinking
 
 > A basic Program similar to printing "*Hello World* " in any programming language. The Aim is to blink an LED using **Arduino Uno Board**.
 
 >Arduino Uno is an open-source microcontroller board developed by Arduino.cc. It has several advantages over the conventional microcontrollers. It comes with a pre-tested software and hardware libraries and has its own integrated development environment (IDE). Also it is less expensive & beginner friendly.
 
-#### Components Required
+### Components Required
    * Arduino Uno Board x1
    * USB Cable x1
    * LED (Any Color) x1
@@ -26,7 +26,7 @@
    * Breadboard
    * Jumper Wires (Male to Male ) x2
 
-#### Code
+### Code
 
 ``` int ledPin = 10; // define digital pin 10.
 
@@ -43,11 +43,11 @@ void loop()
 } 
 
 ```
-#### Circuit Diagram
+### Circuit Diagram
 
 ![sc_exp1](assets/exp1.jpg)
 
-#### Video 
+### Video 
 
 <iframe width="650" height="335" src="https://www.youtube.com/embed/1ex6jYmz-p8" title="exp1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -55,7 +55,7 @@ void loop()
 
 > Similar experiment to that of the previous one. Instead of 1 LED, 3 LEDs are used.
 
-#### Components Required
+### Components Required
   * Arduino board x1
   * USB cable x1
   * Red M5 LED x1
@@ -65,7 +65,7 @@ void loop()
   * Breadboard x1
   * Breadboard jumper wires as required.
 
-#### Code
+### Code
 
 ``` int redled =13; // initialize digital pin 13.
 int yellowled =9; // initialize digital pin 9.
@@ -97,11 +97,11 @@ void loop()
 }
 
 ```
-#### Circuit Diagram
+### Circuit Diagram
 
 ![sc_exp2](assets/exp2.jpg)
 
-#### Video 
+### Video 
 
 <iframe width="650" height="335" src="https://www.youtube.com/embed/eb3MCQJ6O7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
