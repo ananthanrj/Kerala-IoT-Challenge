@@ -14,7 +14,42 @@
 
 ### Experiment 1 - Hello World LED Blinking
 
+> A basic Program similar to printing "*Hello World* " in any programming language. The Aim is to blink an LED using **Arduino Uno Board**.
 
+>Arduino Uno is an open-source microcontroller board developed by Arduino.cc. It has several advantages over the conventional microcontrollers. It comes with a pre-tested software and hardware libraries and has its own integrated development environment (IDE). Also it is less expensive & beginner friendly.
+
+#### Components Required
+   * Arduino Uno Board x1
+   * USB Cable x1
+   * LED (Any Color) x1
+   * 220 OHM Resistor X1
+   * Breadboard
+   * Jumper Wires (Male to Male ) x2
+
+#### Code
+
+``` int ledPin = 10; // define digital pin 10.
+
+void setup()
+{
+    pinMode(ledPin, OUTPUT);// define pin with  LED connected as output.
+}
+void loop()
+{
+    digitalWrite(ledPin, HIGH); // set the LED on.
+    delay(1000); // wait for a second.
+    digitalWrite(ledPin, LOW); // set the LED off.
+    delay(1000); // wait for a second
+} 
+
+```
+#### Circuit Diagram
+
+![sc_exp1](assets/images/exp1.jpg)
+
+#### Video 
+
+<iframe width="650" height="335" src="https://www.youtube.com/embed/1ex6jYmz-p8" title="exp1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
