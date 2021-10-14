@@ -45,11 +45,65 @@ void loop()
 ```
 #### Circuit Diagram
 
-![sc_exp1](assets/images/exp1.jpg)
+![sc_exp1](assets/exp1.jpg)
 
 #### Video 
 
 <iframe width="650" height="335" src="https://www.youtube.com/embed/1ex6jYmz-p8" title="exp1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Experiment 2 - Hello World LED Blinking
+
+> Similar experiment to that of the previous one. Instead of 1 LED, 3 LEDs are used.
+
+#### Components Required
+  * Arduino board x1
+  * USB cable x1
+  * Red M5 LED x1
+  * Yellow M5 LED x1
+  * Green M5 LED x1
+  * 220Ω resistor x3
+  * Breadboard x1
+  * Breadboard jumper wires as required.
+
+#### Code
+
+``` int redled =13; // initialize digital pin 13.
+int yellowled =9; // initialize digital pin 9.
+int greenled =6; // initialize digital pin 6.
+void setup()
+{
+    pinMode(redled, OUTPUT);// set the pin with red LED as “output”
+    pinMode(yellowled, OUTPUT); // set the pin with yellow LED as “output”
+    pinMode(greenled, OUTPUT); // set the pin with green LED as “output”
+}
+void loop()
+{
+    digitalWrite(greenled, HIGH);//// turn on green LED
+    delay(5000);// wait 5 seconds
+
+    digitalWrite(greenled, LOW); // turn off green LED
+
+    for(int i=0;i<3;i++)// blinks for 3 times
+    {
+         delay(500);// wait 0.5 second
+         digitalWrite(yellowled, HIGH);// turn on yellow LED
+         delay(500);// wait 0.5 second
+         digitalWrite(yellowled, LOW);// turn off yellow LED
+    } 
+    delay(500);// wait 0.5 second
+    digitalWrite(redled, HIGH);// turn on red LED
+    delay(5000);// wait 5 seconds
+    digitalWrite(redled, LOW);// turn off red LED
+}
+
+```
+#### Circuit Diagram
+
+![sc_exp2](assets/exp2.jpg)
+
+#### Video 
+
+<iframe width="650" height="335" src="https://www.youtube.com/embed/eb3MCQJ6O7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
