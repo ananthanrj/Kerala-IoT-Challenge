@@ -2,23 +2,23 @@
 
 > **Foxlab Makerspace** in association with **GTech - Group of Technology Companies in Kerala** is launching our prestigious program  “*Kerala IoT Challenge 2021*”,  with a vision to mould 100 IoT experts in Kerala, hosting on the MuLearn platform. Kerala IoT Challenge is a program designed in 4 levels followed by a hackathon to identify and train quality industry leaders in the IoT domain, while any novice learner can start with layer 1 and others can enter laterally to the desired layer after an evaluation.
 
-## About Me
+### About Me
 > Hey y'all,  I'm Anantha Krishnan R J, a first year Electrical & Electronics Engineering Undergraduate from [**College of Engineering, Trivandrum**](https://www.cet.ac.in/). A beginner to the field of IoT. Hope it goes well.
 
-# Level 1:
+## Level 1:
 
 > Level 1 aims to set the foundation to the field of electonics. It comprises of 12 Experiments which are beginner friendly.
 
-# Experiments 
+## Experiments 
 ---
 
-## Experiment 1 - Hello World LED Blinking
+### Experiment 1 - Hello World LED Blinking
 
 > A basic Program similar to printing "*Hello World* " in any programming language. The Aim is to blink an LED using **Arduino Uno Board**.
 
 >Arduino Uno is an open-source microcontroller board developed by Arduino.cc. It has several advantages over the conventional microcontrollers. It comes with a pre-tested software and hardware libraries and has its own integrated development environment (IDE). Also it is less expensive & beginner friendly.
 
-### Components Required
+#### Components Required
    * Arduino Uno Board x1
    * USB Cable x1
    * LED (Any Color) x1
@@ -26,9 +26,11 @@
    * Breadboard
    * Jumper Wires (Male to Male ) x2
 
-### Code
+#### Code
 
-``` int ledPin = 10; // define digital pin 10.
+```
+
+int ledPin = 10; // define digital pin 10.
 
 void setup()
 {
@@ -43,19 +45,20 @@ void loop()
 } 
 
 ```
-### Circuit Diagram
+
+#### Circuit Diagram
 
 ![sc_exp1](assets/exp1.jpg)
 
-### Video 
+#### Video 
 
 <iframe width="650" height="335" src="https://www.youtube.com/embed/1ex6jYmz-p8" title="exp1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Experiment 2 - Hello World LED Blinking
+### Experiment 2 - Traffic Light
 
 > Similar experiment to that of the previous one. Instead of 1 LED, 3 LEDs are used.
 
-### Components Required
+#### Components Required
   * Arduino board x1
   * USB cable x1
   * Red M5 LED x1
@@ -65,9 +68,11 @@ void loop()
   * Breadboard x1
   * Breadboard jumper wires as required.
 
-### Code
+#### Code
 
-``` int redled =13; // initialize digital pin 13.
+```
+
+int redled =13; // initialize digital pin 13.
 int yellowled =9; // initialize digital pin 9.
 int greenled =6; // initialize digital pin 6.
 void setup()
@@ -97,13 +102,105 @@ void loop()
 }
 
 ```
-### Circuit Diagram
+#### Circuit Diagram
 
 ![sc_exp2](assets/exp2.jpg)
 
-### Video 
+#### Video 
 
 <iframe width="650" height="335" src="https://www.youtube.com/embed/eb3MCQJ6O7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+## Experiment 3 - LED Chasing Effect
 
+> We often see billboards composed of colorful LEDs. They are constantly changing to form various light effects. In this experiment, we compile a program to simulate LED chasing effect.
+
+### Components Required
+ * Led *6
+ * Arduino board *1
+ * 220Ω resistor *6
+ * Breadboard *1
+ * USB cable*1
+ * Breadboard wire *13
+
+### Code
+
+```
+
+int BASE = 1;  // the I/O pin for the first LED
+int NUM = 6;   // number of LEDs
+void setup()
+{
+   for (int i = BASE; i <=BASE + NUM; i ++) 
+   {
+     pinMode(i, OUTPUT);   // set I/O pins as output
+   }
+}
+void loop()
+{
+   for (int i = BASE; i <=BASE + NUM; i ++) 
+   {
+     digitalWrite(i, LOW);    // set I/O pins as “low”, turn off LEDs one by one.
+     delay(200);        // delay
+   }
+   for (int i = BASE; i <=BASE + NUM; i ++) 
+   {
+     digitalWrite(i, HIGH);    // set I/O pins as “high”, turn on LEDs one by one
+     delay(200);        // delay
+   }  
+}
+
+```
+### Circuit Diagram
+
+![sc_exp3](assets/exp3.jpg)
+
+### Video 
+
+<iframe width="650" height="335" src="https://www.youtube.com/embed/cR959Dh0Emw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Experiment 4 - Button Controlled LED
+
+> An experiment to light an LED using a Push Button.
+
+### Components Required
+ * Led *6
+ * Arduino board *1
+ * 220Ω resistor *6
+ * Breadboard *1
+ * USB cable*1
+ * Breadboard wire *13
+
+### Code
+
+```
+
+int ledpin=9;// initialize pin 9
+int inpin=6;// initialize pin 6
+int val;// define val
+void setup()
+{
+    pinMode(ledpin,OUTPUT);// set LED pin as “output”
+    pinMode(inpin,INPUT);// set button pin as “input”
+}
+void loop()
+{
+    val=digitalRead(inpin);// read the level value of pin 7 and assign if to val
+    if(val==LOW)// check if the button is pressed, if yes, turn on the LED
+    { 
+        digitalWrite(ledpin,LOW);
+    }
+    else
+    { 
+        digitalWrite(ledpin,HIGH);}
+    }
+}
+
+```
+### Circuit Diagram
+
+![sc_exp4](assets/exp4.jpg)
+
+### Video 
+
+<iframe width="650" height="335" src="https://www.youtube.com/embed/NAz4HatpXPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
