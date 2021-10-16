@@ -204,3 +204,41 @@ void loop()
 
 <iframe width="650" height="335" src="https://www.youtube.com/embed/NAz4HatpXPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+## Experiment 5 - Buzzer
+
+> An experiment to understand the working of a buzzer.
+
+### Components Required
+  * Arduino Uno
+  * Buzzer x1
+  * Breadboard x1
+  * Breadboard Jumper Wire x2
+  * USB cable x1
+
+### Code
+
+```
+
+int buzzer=8;// initialize digital IO pin that controls the buzzer
+void setup() 
+{ 
+  pinMode(buzzer,OUTPUT);// set pin mode as “output”
+} 
+void loop() 
+{
+digitalWrite(buzzer, HIGH); // produce sound
+}
+
+```
+### Circuit Diagram
+
+![sc_exp5](assets/exp5.jpg)
+
+### Video 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0pcfJ9HyTD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+
