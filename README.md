@@ -50,7 +50,7 @@ void loop()
 
 ![sc_exp1](assets/exp1.jpg)
 
-#### Video 
+#### Simulation 
 
 <iframe width="650" height="335" src="https://www.youtube.com/embed/1ex6jYmz-p8" title="exp1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -106,7 +106,7 @@ void loop()
 
 ![sc_exp2](assets/exp2.jpg)
 
-#### Video 
+#### Simulation
 
 <iframe width="650" height="335" src="https://www.youtube.com/embed/eb3MCQJ6O7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -154,7 +154,7 @@ void loop()
 
 ![sc_exp3](assets/exp3.jpg)
 
-### Video 
+### Simulation 
 
 <iframe width="650" height="335" src="https://www.youtube.com/embed/cR959Dh0Emw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -200,7 +200,7 @@ void loop()
 
 ![sc_exp4](assets/exp4.jpg)
 
-### Video 
+### Simulation 
 
 <iframe width="650" height="335" src="https://www.youtube.com/embed/NAz4HatpXPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -234,7 +234,7 @@ digitalWrite(buzzer, HIGH); // produce sound
 
 ![sc_exp5](assets/exp5.jpg)
 
-### Video 
+### Simulation 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0pcfJ9HyTD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
