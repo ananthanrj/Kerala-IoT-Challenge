@@ -329,11 +329,11 @@ void loop()
 ```
 ### Circuit Diagram
 
-![sc_exp7](assets/images/exp7.jpg)
+![sc_exp7](assets/images/exp7.png)
 
 ### Simulation
 
-<iframe width="650" height="335" src="https://www.youtube.com/embed/Lq5Wx8G_-kE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![vid_exp7](assets/simulation/exp7.gif)
 
 
 
