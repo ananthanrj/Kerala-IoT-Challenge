@@ -291,5 +291,49 @@ for(val=0; val<255; val++)
 
 <iframe width="650" height="335" src="https://www.youtube.com/embed/y2YBoQHIZYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+## Experiment 7 - LDR Light Sensor
+
+> An experiment to understand the working of an LDR light Sensor.
+
+> LDR : Light Dependent Sensor is a resistor whose resistance varies from different incident light strength. It is based on the photoelectric effect of the semiconductor. If the incident light is intense, its resistance reduces; if the incident light is weak, the resistance increases.
+
+### Components Required
+  * Arduino Uno Board
+  * Photo Resistor*1
+  * Red M5 LED*1
+  * 10KΩ Resistor*1
+  * 220Ω Resistor*1
+  * Breadboard*1
+  * Breadboard Jumper Wire*5
+  * USB cable*1
+
+### Code
+
+```
+
+int potpin=0;// initialize analog pin 0, connected with photovaristor
+int ledpin=11;// initialize digital pin 11, 
+int val=0;// initialize variable val
+void setup()
+{
+  pinMode(ledpin,OUTPUT);// set digital pin 11 as “output”
+  Serial.begin(9600);// set baud rate at “9600”
+}
+void loop()
+{
+  val=analogRead(potpin);// read the value of the sensor and assign it to val
+  Serial.println(val);// display the value of val
+  analogWrite(ledpin,val/4);// set up brightness（maximum value 255）
+  delay(10);// wait for 0.01 
+}
+```
+### Circuit Diagram
+
+![sc_exp7](assets/exp7.jpg)
+
+### Simulation
+
+<iframe width="650" height="335" src="https://www.youtube.com/embed/Lq5Wx8G_-kE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 
