@@ -52,7 +52,7 @@ void loop()
 
 #### Simulation 
 
-<iframe width="650" height="335" src="https://www.youtube.com/embed/1ex6jYmz-p8" title="exp1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![vid_exp1](assets/simulation/exp1.gif)
 
 ### Experiment 2 - Traffic Light
 
@@ -108,7 +108,7 @@ void loop()
 
 #### Simulation
 
-<iframe width="650" height="335" src="https://www.youtube.com/embed/eb3MCQJ6O7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![vid_exp2](assets/simulation/exp2.gif)
 
 ## Experiment 3 - LED Chasing Effect
 
@@ -156,7 +156,7 @@ void loop()
 
 ### Simulation 
 
-<iframe width="650" height="335" src="https://www.youtube.com/embed/cR959Dh0Emw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![vid_exp3](assets/simulation/exp3.gif)
 
 ## Experiment 4 - Button Controlled LED
 
