@@ -202,7 +202,7 @@ void loop()
 
 ### Simulation 
 
-<iframe width="650" height="335" src="https://www.youtube.com/embed/NAz4HatpXPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![vid_exp4](assets/simulation/exp4.gif)
 
 ## Experiment 5 - Buzzer
 
@@ -236,7 +236,7 @@ digitalWrite(buzzer, HIGH); // produce sound
 
 ### Simulation 
 
-<iframe width="650" height="335" src="https://www.youtube.com/embed/VPA7fnJSf70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![vid_exp5](assets/simulation/exp5.gif)
 
 ## Experiment 6 - RGB LED
 
@@ -289,7 +289,7 @@ for(val=0; val<255; val++)
 
 ### Simulation
 
-<iframe width="650" height="335" src="https://www.youtube.com/embed/y2YBoQHIZYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![vid_exp6](assets/simulation/exp6.gif)
 
 ## Experiment 7 - LDR Light Sensor
 
