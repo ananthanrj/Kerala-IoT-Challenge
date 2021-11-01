@@ -54,6 +54,10 @@ void loop()
 
 ![vid_exp1](assets/simulation/exp1.gif)
 
+#### Snapshot
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lnA6eKeujNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Experiment 2 - Traffic Light
 
 > Similar experiment to that of the previous one. Instead of 1 LED, 3 LEDs are used.
