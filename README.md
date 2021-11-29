@@ -339,5 +339,52 @@ void loop()
 
 ![vid_exp7](assets/simulation/exp7.gif)
 
+## Experiment 8  - Flame Sensor
+
+> Infrared Receiver (IR) is used for detecting flame.
+
+### Components Required
+* Arduino Uno Board*1
+* Flame Sensor *1
+* Buzzer *1
+* 10K Resistor *1
+* Breadboard Jumper Wire*6
+* USB cable*1
+
+### Code
+
+```
+
+int flame=0;// select analog pin 0 for the sensor
+int Beep=9;// select digital pin 9 for the buzzer
+int val=0;// initialize variable
+ void setup() 
+{
+  pinMode(Beep,OUTPUT);// set LED pin as “output”
+ pinMode(flame,INPUT);// set buzzer pin as “input”
+ Serial.begin(9600);// set baud rate at “9600”
+ } 
+void loop() 
+{ 
+  val=analogRead(flame);// read the analog value of the sensor 
+  Serial.println(val);// output and display the analog value
+  if(val>=600)// when the analog value is larger than 600, the buzzer will buzz
+  {  
+   digitalWrite(Beep,HIGH); 
+   }else 
+   {  
+     digitalWrite(Beep,LOW); 
+    }
+   delay(500); 
+}
+```
+### Circuit Diagram
+
+![sc_exp7](assets/images/exp8.png)
+
+### Snapshots
+
+![vid_exp7](assets/simulation/exp8.jpg)
+
 
 
