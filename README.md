@@ -428,6 +428,33 @@ delay(500);// wait for 0.5 second
 
 ![vid_exp9](assets/simulation/exp9.jpg)
 
+## Experiment 9   - LM35 Temperature Sensor
+
+> An infrared receiver, or IR receiver, is hardware that sends information from an infrared remote control to another device by receiving and decoding signals. This is being used in most of the remotes we use at home.
+
+### Components Required
+* Arduino Uno Board *1
+* Infrared Remote Controller(You can use TV Remote or any other remote) *1
+* Infrared Receiver *1
+* LED *6
+* 220ΩResistor *6
+* Breadboard Wire *11
+* USB cable *1
+
+### Code
+
+```
+
+########
+```
+### Circuit Diagram
+
+![sc_exp10](assets/images/exp10.png)
+
+### Snapshots
+
+![vid_exp10](assets/simulation/exp10.jpg)
+
 
 
 
