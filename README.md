@@ -428,6 +428,8 @@ delay(500);// wait for 0.5 second
 
 ![vid_exp9](assets/simulation/exp9.jpg)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xWZ7433ePM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Experiment 10   - IR Remote Control Using TSOP
 
 > An infrared receiver, or IR receiver, is hardware that sends information from an infrared remote control to another device by receiving and decoding signals. This is being used in most of the remotes we use at home.
