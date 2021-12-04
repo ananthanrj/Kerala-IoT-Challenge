@@ -500,3 +500,46 @@ Serial.println(val);// display val’s value
 ![vid_exp11](assets/simulation/exp11.jpg)
 
 
+## Experiment 12   - 7 Segment Display
+
+
+> LED segment display is a semiconductor light-emitting device. Its basic unit is a light-emitting diode (LED). LED segment display can be divided into 7-segment display and 8-segment display according to the number of segments. 8-segment display has one more LED unit ( for decimal point display) than 7-segment one.
+
+### Components Required
+* Arduino Uno Board*1
+* 1-digit LED Segment Display*1
+* 220Ω Resistor*8
+* Breadboard*1
+* Breadboard Jumper Wires *several
+* USB cable*1
+
+### Code
+
+```
+
+int potpin=0;// initialize analog pin 0
+int ledpin=13;// initialize digital pin 13
+int val=0;// define val, assign initial value 0
+void setup()
+{
+pinMode(ledpin,OUTPUT);// set digital pin as “output”
+Serial.begin(9600);// set baud rate at 9600
+}
+void loop()
+{
+digitalWrite(ledpin,HIGH);// turn on the LED on pin 13
+delay(50);// wait for 0.05 second
+digitalWrite(ledpin,LOW);// turn off the LED on pin 13
+delay(50);// wait for 0.05 second
+val=analogRead(potpin);// read the analog value of analog pin 0, and assign it to val 
+Serial.println(val);// display val’s value
+}
+
+```
+### Circuit Diagram
+
+![sc_exp11](assets/images/exp12.png)
+
+### Snapshots
+
+![vid_exp11](assets/simulation/exp12.jpg)
