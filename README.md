@@ -706,3 +706,87 @@ void loop() {
 ## Simulation
 
 <iframe width="650" height="345" src="https://www.youtube.com/embed/YnOgSGl-LDE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Assignment 2 - Digital Dice using LEDs & Push Button.
+
+### Components Required
+* Arduino Uno Board *1
+* 10kΩ Resistor *1
+* Breadboard *1
+* Breadboard Jumper Wire (As per requirement)
+* USB cable *1
+* 220Ω Resistor *6
+* LED *6
+* PushButton
+
+### Code
+
+```
+
+int led1 = 2;
+int led2 = 3;
+int led3 = 4;
+int led4 = 5;
+int led5 = 6;
+int led6 = 7;
+int button = 11;
+int pressed = 0;
+
+void setup() {
+  for (int i=led1; i<=led6; i++) 
+    pinMode(i, OUTPUT);
+  pinMode(button, INPUT);
+  Serial.begin(9600);
+
+}
+
+void showNumber(int x) {
+  if (x >= 1) 
+    digitalWrite(led1, HIGH);
+  
+  if (x >= 2) 
+    digitalWrite(led2, HIGH);
+  
+  if (x >= 3) 
+    digitalWrite(led3, HIGH);    
+  
+  if (x >= 4) 
+    digitalWrite(led4, HIGH);    
+ 
+  if (x >= 5) 
+    digitalWrite(led5, HIGH);    
+  
+  if (x == 6) 
+    digitalWrite(led6, HIGH);    
+  
+}
+
+int throwDice() {
+  int randomnum = random(1,7);
+  return randomnum;
+}
+
+void setAllLED(int value) {
+  for (int i=led1; i<=led6; i++) {
+    digitalWrite(i, value);
+  }
+}
+
+void loop() {
+  pressed = digitalRead(button);
+
+  if (pressed == HIGH) {
+    setAllLED(LOW);   
+   int thrownNumber = throwDice();
+   showNumber(thrownNumber);
+  } 
+
+}
+
+```
+
+![img_assg2](assets/simulation/assg2.png)
+
+## Simulation
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CpxH_lghoPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
