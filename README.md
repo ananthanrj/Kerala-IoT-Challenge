@@ -425,9 +425,7 @@ delay(500);// wait for 0.5 second
 ![sc_exp9](assets/images/exp9.png)
 
 ### Snapshots
-
-![vid_exp9](assets/simulation/exp9.jpg)
-
++
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xWZ7433ePM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Experiment 10   - IR Remote Control Using TSOP
@@ -447,7 +445,50 @@ delay(500);// wait for 0.5 second
 
 ```
 
-########
+#include<IRremote.h>
+
+const int RECV_PIN = 4;
+const int redPin =8;
+const int yellowPin =9;
+int toggleState =0;
+
+IRrecv irrecv(RECV_PIN);
+decode_results results;
+
+void setup()
+{
+  irrecv.enableIRIn();
+  pinMode(redPin,OUTPUT);
+  pinMode(yellowPin, OUTPUT);
+}
+
+void loop(){
+if (irrecv.decode(&results))
+  switch(results.value){
+    case '929F186F':
+    digitalWrite(redPin,HIGH);
+    delay(2000);
+    digitalWrite(redPin,LOW);
+    break;
+
+  switch(results.value){
+    case 'F3F8F840':
+    digitalWrite(yellowPin,HIGH);
+    delay(2000);
+    digitalWrite(yellowPin,LOW);
+    break;
+
+    if(toggleState ==0){
+      digitalWrite(yellowPin,HIGH);
+      toggleState=1;
+    }
+    else{
+      digitalWrite(yellowPin,LOW);
+      toggleState=0;
+    }
+  }
+  irrecv.resume();
+  }}
 ```
 ### Circuit Diagram
 
