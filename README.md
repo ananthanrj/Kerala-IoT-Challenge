@@ -785,7 +785,7 @@ void loop() {
 
 ```
 
-![img_assg2](assets/simulation/assg2.png)
+![img_assignmanet2](assets/simulation/assg2.png)
 
 ## Simulation
 
