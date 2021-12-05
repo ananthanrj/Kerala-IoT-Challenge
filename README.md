@@ -496,7 +496,7 @@ if (irrecv.decode(&results))
 
 ### Snapshots
 
-![vid_exp10](assets/simulation/exp10.jpg)
+![img_exp10](assets/simulation/exp10.jpg)
 
 
 ## Experiment 11   - Potentiometer analog Value Reading
@@ -540,7 +540,7 @@ Serial.println(val);// display val’s value
 
 ### Snapshots
 
-![vid_exp11](assets/simulation/exp11.jpg)
+![vid_exp11](assets/simulation/exp11.gif)
 
 
 ## Experiment 12   - 7 Segment Display
