@@ -706,9 +706,6 @@ delay(1000); // wait for 1s
 
 ![sc_exp12](assets/images/exp12.png)
 
-### Snapshots
-
-![vid_exp12](assets/simulation/exp12.jpg)
 
 ## Assignment 1 - Automatic night lamp using LDR & LED
 
