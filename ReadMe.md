@@ -5,4 +5,4 @@
 | Level | Description | Links |
 | ----- | ------------ | ----- |
 | Level 1 | Basic Electronics & Arduino | [Documentation](https://ananthanrj.github.io/Kerala-IoT-Challenge/Level1)
-| Level 2 | Esp 32 & Intro to IoT | [Documentation](#)
+| Level 2 | Esp 32 & Intro to IoT | [Documentation](https://ananthanrj.github.io/Kerala-IoT-Challenge/Level2)
